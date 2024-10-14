@@ -1,5 +1,5 @@
 <!-- BEGIN_TF_DOCS -->
-# wanted-cloud/terraform-module-skeleton
+# wanted-cloud/terraform-azure-public-ip
 
 Some descirption of the module.
 
