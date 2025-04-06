@@ -13,5 +13,5 @@ resource "azurerm_public_ip" "this" {
   sku      = var.sku
   sku_tier = var.sku_tier
 
-  tags = local.tags
+  tags = local.metadata.tags
 }
