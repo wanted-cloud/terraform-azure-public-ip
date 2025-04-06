@@ -1,6 +1,12 @@
-variable "public_ip_name" {
+variable "name" {
   description = "The name of the public IP address."
   type        = string
+}
+
+variable "location" {
+  description = "The location in which to create the public IP address, blank value defaults to resource group location."
+  type        = string
+  default     = ""
 }
 
 variable "resource_group_name" {

@@ -1,3 +1,5 @@
 locals {
-  definitions = {}
+  definitions = {
+    tags = { ManagedBy = "Terraform" }
+  }
 }

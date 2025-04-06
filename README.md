@@ -31,7 +31,7 @@ The following providers are used by this module:
 
 The following input variables are required:
 
-### <a name="input_public_ip_name"></a> [public\_ip\_name](#input\_public\_ip\_name)
+### <a name="input_name"></a> [name](#input\_name)
 
 Description: The name of the public IP address.
 
@@ -54,6 +54,14 @@ Description: value of the allocation method for the public IP address.
 Type: `string`
 
 Default: `"Dynamic"`
+
+### <a name="input_location"></a> [location](#input\_location)
+
+Description: The location in which to create the public IP address, blank value defaults to resource group location.
+
+Type: `string`
+
+Default: `""`
 
 ### <a name="input_metadata"></a> [metadata](#input\_metadata)
 
@@ -133,8 +141,9 @@ The minimal usage for the module is as follows:
 module "example" {
     source = "../.."
     
-    name   = "example"
-    display_name = "Example Management Group"
+    name = "example-ip"
+    resource_group_name = "example-rg"
+    
 }
 ```
 ## Contributing

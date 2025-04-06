@@ -1,6 +1,7 @@
 module "example" {
     source = "../.."
     
-    name   = "example"
-    display_name = "Example Management Group"
+    name = "example-ip"
+    resource_group_name = "example-rg"
+    
 }
