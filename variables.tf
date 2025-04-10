@@ -14,6 +14,12 @@ variable "resource_group_name" {
   type        = string
 }
 
+variable "tags" {
+  description = "A mapping of tags to assign to the resource."
+  type        = map(string)
+  default     = {}
+}
+
 variable "sku" {
   description = "The SKU of the Public IP. Possible values are Basic and Standard."
   type        = string

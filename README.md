@@ -105,6 +105,14 @@ Type: `string`
 
 Default: `"Regional"`
 
+### <a name="input_tags"></a> [tags](#input\_tags)
+
+Description: A mapping of tags to assign to the resource.
+
+Type: `map(string)`
+
+Default: `{}`
+
 ## Outputs
 
 The following outputs are exported:
